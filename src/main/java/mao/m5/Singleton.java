@@ -1,5 +1,7 @@
 package mao.m5;
 
+import java.io.Serializable;
+
 /**
  * Project name(项目名称)：java设计模式_单例模式
  * Package(包名): mao.m5
@@ -16,7 +18,7 @@ package mao.m5;
  * 要解决双重检查锁模式带来空指针异常的问题，只需要使用 `volatile` 关键字, `volatile` 关键字可以保证可见性和有序性。
  */
 
-public class Singleton
+public class Singleton implements Serializable
 {
     public String str = "hello world";
 
