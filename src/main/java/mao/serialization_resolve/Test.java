@@ -15,8 +15,18 @@ package mao.serialization_resolve;
 
 public class Test
 {
+    private static final String PATH = "./Singleton.txt";
+
     public static void main(String[] args)
     {
-
+        System.out.println(Singleton.getInstance());
+        System.out.println(Singleton.getInstance());
+        System.out.println("-----");
+        SingletonIO.write(Singleton.getInstance(), PATH);
+        System.out.println(SingletonIO.read(PATH));
+        System.out.println(SingletonIO.read(PATH));
+        System.out.println(SingletonIO.read(PATH));
+        System.out.println(SingletonIO.read(PATH));
+        System.out.println(SingletonIO.read(PATH));
     }
 }
